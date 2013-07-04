@@ -1,0 +1,15 @@
+{
+    "name": "wakemplate",
+    "description": "A Wakanda Server Side Templating module",
+    "version": "0.1",
+    "author": "Mohamed IDRISSI",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/midrissi/wakemplate.git"
+    },
+    "keywords": ["wakanda", "ssjs", "wakemplate", "template", "underscore"],
+    "dependencies" : {"underscore" : "https://github.com/documentcloud/underscore.git"},
+    "main": "./wakemplate.js",
+    "engines": {"wakanda" : ">=3.0"},
+    "license": "MIT"
+}
