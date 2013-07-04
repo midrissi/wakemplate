@@ -4,7 +4,7 @@ The server side templating module is based on the [underscore](http://www.unders
 
 ###Example: Quickly start the templating
 ```js
-var ssjs = require('ssjs');
+var ssjs = require('wakemplate');
 ssjs.start();
 ```
 
