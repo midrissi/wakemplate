@@ -51,7 +51,11 @@ function root(request, response) {
 if (typeof exports !== 'undefined') {
 	exports.start = function(regex, baseFolder) {
 		regex = regex || '/.*\.ssjs$';
-		baseFolder = Folder(baseFolder) || getItemsWithRole('webFolder');
+		try{
+			baseFolder = Folder(baseFolder);
+		}catch(e){
+			baseFolder = getItemsWithRole('webFolder');
+		}
 
 		switch (true) {
 			case _.isString(regex):
